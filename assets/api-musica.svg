@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="musicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#musicGrad)"/>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="70" fill="white" text-anchor="middle" font-weight="bold">🎵 API MÚSICA 🎵</text>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.85)" text-anchor="middle">Integração com API de Músicas</text>
+  
+  <!-- Player de música -->
+  <rect x="300" y="300" width="600" height="350" rx="25" fill="rgba(0,0,0,0.3)"/>
+  <rect x="320" y="320" width="560" height="200" rx="15" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Disco -->
+  <circle cx="450" cy="420" r="70" fill="rgba(0,0,0,0.5)" stroke="white" stroke-width="3"/>
+  <circle cx="450" cy="420" r="20" fill="rgba(255,255,255,0.8)"/>
+  
+  <!-- Info da música -->
+  <text x="570" y="390" font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold">Nome da Música</text>
+  <text x="570" y="430" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.7)">Artista</text>
+  <text x="570" y="470" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.6)">Álbum • 2025</text>
+  
+  <!-- Controles -->
+  <circle cx="450" cy="590" r="35" fill="rgba(255,255,255,0.2)"/>
+  <polygon points="445,580 445,600 465,590" fill="white"/>
+  
+  <circle cx="550" cy="590" r="30" fill="rgba(255,255,255,0.15)"/>
+  <text x="550" y="605" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle">⏸</text>
+  
+  <circle cx="650" cy="590" r="35" fill="rgba(255,255,255,0.2)"/>
+  <polygon points="655,580 655,600 635,590" fill="white"/>
+  
+  <!-- Barra de progresso -->
+  <rect x="350" y="540" width="500" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <rect x="350" y="540" width="250" height="8" rx="4" fill="white"/>
+</svg>

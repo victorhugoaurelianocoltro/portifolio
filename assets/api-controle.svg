@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#apiGrad)"/>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="70" fill="white" text-anchor="middle" font-weight="bold">API REST</text>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.85)" text-anchor="middle">Controle de Produtos Backend</text>
+  
+  <!-- Endpoints -->
+  <rect x="150" y="300" width="900" height="80" rx="15" fill="rgba(16,185,129,0.3)"/>
+  <text x="200" y="350" font-family="Courier New, monospace" font-size="30" fill="white" font-weight="bold">GET</text>
+  <text x="350" y="350" font-family="Courier New, monospace" font-size="26" fill="rgba(255,255,255,0.9)">/api/produtos</text>
+  <circle cx="950" cy="340" r="15" fill="#10b981"/>
+  
+  <rect x="150" y="400" width="900" height="80" rx="15" fill="rgba(59,130,246,0.3)"/>
+  <text x="200" y="450" font-family="Courier New, monospace" font-size="30" fill="white" font-weight="bold">POST</text>
+  <text x="350" y="450" font-family="Courier New, monospace" font-size="26" fill="rgba(255,255,255,0.9)">/api/produtos</text>
+  <circle cx="950" cy="440" r="15" fill="#10b981"/>
+  
+  <rect x="150" y="500" width="900" height="80" rx="15" fill="rgba(245,158,11,0.3)"/>
+  <text x="200" y="550" font-family="Courier New, monospace" font-size="30" fill="white" font-weight="bold">PUT</text>
+  <text x="350" y="550" font-family="Courier New, monospace" font-size="26" fill="rgba(255,255,255,0.9)">/api/produtos/:id</text>
+  <circle cx="950" cy="540" r="15" fill="#10b981"/>
+  
+  <rect x="150" y="600" width="900" height="80" rx="15" fill="rgba(239,68,68,0.3)"/>
+  <text x="200" y="650" font-family="Courier New, monospace" font-size="30" fill="white" font-weight="bold">DELETE</text>
+  <text x="400" y="650" font-family="Courier New, monospace" font-size="26" fill="rgba(255,255,255,0.9)">/api/produtos/:id</text>
+  <circle cx="950" cy="640" r="15" fill="#10b981"/>
+</svg>
