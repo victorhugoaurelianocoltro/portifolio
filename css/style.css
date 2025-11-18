@@ -596,6 +596,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    align-items: stretch; /* garante que os cards estiquem igualmente */
 }
 
 .projeto-card {
@@ -605,6 +606,9 @@ section {
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
     cursor: pointer;
+    display: flex;            /* permite controlar a altura interna */
+    flex-direction: column;   /* imagem em cima, conteúdo abaixo */
+    height: 100%;             /* ocupar altura total da célula do grid */
 }
 
 .projeto-card:hover {
@@ -666,33 +670,37 @@ section {
 
 .projeto-content {
     padding: 1.5rem;
+    display: flex;          /* habilita empurrar o footer para baixo */
+    flex-direction: column;
+    flex: 1;                /* ocupa o espaço restante do card */
 }
 
 .projeto-content h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* tipografia responsiva para caber com os links */
     margin-bottom: 1rem;
     color: var(--light-text);
 }
 
 .projeto-content p {
     color: var(--gray-text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     line-height: 1.6;
+    font-size: 0.95rem; /* reduz leve para evitar quebra excessiva */
 }
 
 .projeto-footer {
     display: flex;
-    justify-content: center;
+    gap: 1rem;
     align-items: center;
-    gap: 0.8rem;
     flex-wrap: wrap;
+    margin-top: auto;       /* fixa o footer no rodapé do card */
 }
 
 .btn-projeto {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.7rem 1.3rem;
+    padding: 0.65rem 1.2rem; /* botão um pouco menor para caber melhor no card */
     background: var(--gradient-primary);
     color: white;
     text-decoration: none;
@@ -760,6 +768,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    align-items: stretch; /* cards com a mesma altura */
 }
 
 .contato-card {
@@ -772,6 +781,8 @@ section {
     text-decoration: none;
     transition: all var(--transition-normal);
     border: 2px solid transparent;
+    height: 100%;        /* preencher a célula do grid */
+    min-height: 156px;   /* ligeiro aumento para acomodar conteúdo e ícones */
 }
 
 .contato-card:hover {
@@ -796,12 +807,12 @@ section {
 .contato-details h4 {
     color: var(--light-text);
     margin-bottom: 0.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem; /* reduz leve para caber melhor no card */
 }
 
 .contato-details p {
     color: var(--gray-text);
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* reduz leve para caber melhor no card */
 }
 
 /* ============================================
@@ -887,13 +898,13 @@ section {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--card-bg);
     color: var(--gray-text);
 }
 
 .footer-bottom p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 5 rem;
 }
 
 .footer-bottom i {
