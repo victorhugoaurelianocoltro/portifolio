@@ -1,145 +1,40 @@
-# 🚀 Portfólio de Victor Hugo — Desenvolvedor de Sistemas
+# Portfólio — Victor Hugo Aureliano Coltro
 
-Portfólio profissional moderno e responsivo desenvolvido com HTML, CSS e JavaScript puro.
+Site pessoal estático em HTML, CSS e JavaScript, compatível com GitHub Pages e sem dependências de execução ou etapa de build.
 
-## 📋 Descrição
+## Abrir localmente
 
-Este é um portfólio completo e elegante que apresenta minhas habilidades, projetos e informações de contato de forma profissional e interativa.
+Abra `index.html` no navegador ou use **Open with Live Server** no VS Code. Para testar a cópia de e-mail, use localhost ou HTTPS; o navegador pode restringir a área de transferência quando a página é aberta como arquivo.
 
-## ✨ Características
+## Páginas e funcionalidades
 
-- **Design Moderno**: Interface elegante com paleta de cores tecnológica (azul e roxo)
-- **Totalmente Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
-- **Animações Suaves**: Efeitos de scroll, hover e transições fluidas
-- **Performance Otimizada**: Código limpo e otimizado para carregamento rápido
-- **Acessibilidade**: Navegação por teclado e estrutura semântica
+- `index.html`: apresentação, nove projetos com filtros por categoria, formação, competências e contato.
+- `curriculo.html`: currículo com links selecionados e botão para imprimir ou salvar como PDF pelo navegador.
+- `css/style.css`: identidade visual, layouts responsivos, impressão e preferência de movimento reduzido.
+- `css/resume.css`: apresentação do currículo e impressão A4.
+- `js/script.js`: menu acessível, filtros, cópia de e-mail, navegação ativa e impressão.
+- `img/optimized/`: versões JPEG reduzidas das imagens originais; os PNGs foram preservados.
 
-## 🎨 Seções
+O conteúdo principal continua acessível sem JavaScript. Links externos abrem em nova aba na página principal. Não há formulário com envio simulado: o contato usa e-mail, LinkedIn e GitHub.
 
-1. **Home**: Apresentação com nome, cargo e links sociais
-2. **Sobre**: Informações sobre formação e tecnologias
-3. **Projetos**: Showcase de projetos com cards interativos
-4. **Contato**: Links para redes sociais e email
+## Atualizar conteúdo
 
-## 🛠️ Tecnologias Utilizadas
+Edite os textos e projetos diretamente em `index.html`. Cada projeto possui `data-category` (`aplicacoes`, `apis` ou `interfaces`). Ao adicionar projetos, atualize também a contagem inicial e o número no filtro Todos. Atualize `curriculo.html` junto com o portfólio para manter as informações consistentes.
 
-- HTML5
-- CSS3 (Grid, Flexbox, Animações)
-- JavaScript (ES6+)
-- Font Awesome (Ícones)
-- Google Fonts (Tipografia)
+Os dados foram mantidos a partir do portfólio original. A formação, o telefone e os cursos foram atualizados com o currículo fornecido pelo titular. Não foram inventadas datas de graduação, experiência de emprego ou proficiência. As descrições dos projetos são apresentações concisas; não representam auditoria de seus repositórios ou garantias de disponibilidade das APIs externas.
 
-## 📁 Estrutura de Arquivos
+## Publicar
 
-```
-portifolio/
-│
-├── index.html          # Página principal
-├── css/
-│   └── style.css      # Estilos CSS
-├── js/
-│   └── script.js      # Funcionalidades JavaScript
-├── assets/
-│   ├── profile.jpg    # Foto de perfil
-│   └── project*.jpg   # Imagens dos projetos
-└── README.md          # Este arquivo
-```
+Mantenha a configuração existente do GitHub Pages. Depois de revisar as mudanças, faça commit e push pelo fluxo habitual do repositório. O diretório é estático e usa caminhos relativos, funcionando sob `/portifolio/`. Se o domínio mudar, atualize a URL canônica e os metadados Open Graph em `index.html`, além dos links no currículo.
 
-## 🚀 Como Usar
+## Conferência recomendada
 
-1. **Clone ou baixe este repositório**
-2. **Adicione sua foto de perfil**: Coloque sua foto em `assets/profile.jpg`
-3. **Adicione imagens dos projetos**: Coloque as imagens em `assets/project1.jpg`, `assets/project2.jpg`, etc.
-4. **Personalize o conteúdo**: 
-   - Edite `index.html` para atualizar informações pessoais e projetos
-   - Modifique `css/style.css` para ajustar cores e estilos
-5. **Abra `index.html` em seu navegador**
+Confira as larguras de 360 px, 768 px e desktop, navegação por teclado, menu mobile (inclusive Escape), filtros, detalhes dos projetos, links externos e impressão do currículo. No diálogo de impressão, selecione A4 e desative cabeçalhos e rodapés do navegador para um resultado mais limpo.
 
-## 🎨 Personalização
+## Ampliação do conteúdo
 
-### Alterando Cores
+Informações acadêmicas e contato atualizados a partir do currículo fornecido. Repositórios VT-IMPORTS, API--A-melhor-rede-social e app-vendas-mobile consultados via API pública do GitHub em 18/09/2026. As tecnologias foram conferidas nos manifests e, quando disponível, no README; não foi feita auditoria funcional desses sistemas. Os painéis gráficos dos destaques são composições tipográficas, não capturas das aplicações. A busca combina texto e categoria, ignora acentos e inclui estado vazio. Nenhuma chamada externa é necessária para exibir os projetos.
 
-No arquivo `css/style.css`, você encontrará as variáveis de cores no início:
+## Identidade visual
 
-```css
-:root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #ec4899;
-    /* ... */
-}
-```
-
-### Adicionando Novos Projetos
-
-No arquivo `index.html`, localize a seção de projetos e duplique um card existente:
-
-```html
-<div class="projeto-card">
-    <!-- Conteúdo do card -->
-</div>
-```
-
-### Modificando Tecnologias
-
-Na seção "Sobre", você pode adicionar ou remover skills editando os cards na `skills-grid`.
-
-## 📱 Responsividade
-
-O portfólio é totalmente responsivo e se adapta a diferentes tamanhos de tela:
-
-- **Desktop**: Layout completo com todas as funcionalidades
-- **Tablet**: Layout adaptado com grid responsivo
-- **Mobile**: Menu hambúrguer e layout vertical otimizado
-
-## 🌐 Deploy
-
-Você pode fazer deploy deste portfólio em diversas plataformas gratuitas:
-
-- **GitHub Pages**: Ideal para repositórios públicos
-- **Netlify**: Deploy automático com Git
-- **Vercel**: Otimizado para performance
-- **Firebase Hosting**: Rápido e confiável
-
-## 📝 Checklist de Personalização
-
-- [ ] Substituir foto de perfil
-- [ ] Adicionar imagens dos projetos reais
-- [ ] Atualizar descrições dos projetos
-- [ ] Verificar todos os links (GitHub, LinkedIn, Instagram)
-- [ ] Personalizar cores se desejar
-- [ ] Adicionar/remover tecnologias conforme seu perfil
-- [ ] Testar em diferentes navegadores
-- [ ] Testar responsividade em diferentes dispositivos
-
-## 🔗 Links
-
-- **GitHub**: [victorhugoaurelianocoltro](https://github.com/victorhugoaurelianocoltro)
-- **LinkedIn**: [victor-hugo-2b775338b](https://www.linkedin.com/in/victor-hugo-2b775338b)
-- **Instagram**: [@__abencoado___2k25](https://www.instagram.com/__abencoado___2k25)
-- **Email**: hugoaurelianovictor@gmail.com
-
-## 🎯 Próximos Passos
-
-- [ ] Adicionar formulário de contato funcional
-- [ ] Implementar modo escuro/claro
-- [ ] Adicionar seção de blog
-- [ ] Integrar com API do GitHub para mostrar projetos automaticamente
-- [ ] Adicionar animações mais complexas com bibliotecas como GSAP
-
-## 📄 Licença
-
-Este projeto é de uso pessoal. Sinta-se à vontade para se inspirar, mas não copie integralmente.
-
-## 👨‍💻 Autor
-
-**Victor Hugo Aureliano Coltro**
-- Desenvolvedor de Sistemas
-- Formado pelo SENAI
-
----
-
-⭐ Se você gostou deste portfólio, considere dar uma estrela no repositório!
-
-💡 Feito com dedicação e muitas linhas de código ☕
-# portifolio
+A camada `css/theme.css` define a identidade escura para telas: grafite, marfim e champagne. Carregada após os estilos estruturais e limitada a `screen`, preserva a impressão clara do currículo e da página.
